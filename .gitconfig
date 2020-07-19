@@ -1,0 +1,15 @@
+[user]
+	email = yyk@mail.ru
+	name = yyk
+[core]
+	autocrlf = false
+	safecrlf = true
+	editor = vim
+[alias]
+	unstage = reset HEAD --
+	tags = log --no-walk --tags --pretty=format:%C(auto)%h' '%d' '%s --decorate=full
+	lg = log --pretty=%C(auto)%h' '%s 
+	it = !git init && git commit -m \"root\" --allow-empty
+	ca = commit --amend --no-edit
+[push]
+	default = simple
